@@ -1,0 +1,249 @@
+Q1: What is the purpose of the General Linear Model (GLM)?
+A1: GLM is used to model the relationship between a dependent variable and one or more independent variables using linear regression techniques.
+
+Q2: What are the key assumptions of the General Linear Model?
+A2: The key assumptions include linearity, independence of errors, constant variance (homoscedasticity), and normality of errors.
+
+Q3: How do you interpret the coefficients in a GLM?
+A3: The coefficients represent the change in the dependent variable for a one-unit change in the corresponding independent variable, holding other variables constant.
+
+Q4: What is the difference between a univariate and multivariate GLM?
+A4: Univariate GLM involves one dependent variable and one independent variable, while multivariate GLM deals with multiple dependent variables and multiple independent variables.
+
+Q5: Explain the concept of interaction effects in a GLM.
+A5: Interaction effects occur when the combined effect of two or more independent variables on the dependent variable is different from their individual effects.
+
+Q6: How do you handle categorical predictors in a GLM?
+A6: Categorical predictors are typically converted into dummy variables using techniques like one-hot encoding before fitting the GLM.
+
+Q7: What is the purpose of the design matrix in a GLM?
+A7: The design matrix represents the relationship between the dependent and independent variables in the GLM.
+
+Q8: How do you test the significance of predictors in a GLM?
+A8: Hypothesis testing, such as t-tests or F-tests, is used to determine the significance of predictors in a GLM.
+
+Q9: What is the difference between Type I, Type II, and Type III sums of squares in a GLM?
+A9: Type I sums of squares test the effect of each variable sequentially, Type II sums of squares test the effect of each variable while controlling for others, and Type III sums of squares consider the unique contribution of each variable.
+
+Q10: Explain the concept of deviance in a GLM.
+A10: Deviance measures the difference between the observed and expected likelihood of the GLM, providing a measure of model fit.
+
+Q11: What is regression analysis, and what is its purpose?
+A11: Regression analysis is used to model the relationship between a dependent variable and one or more independent variables, aiming to make predictions or understand the variables' associations.
+
+Q12: What is the difference between simple linear regression and multiple linear regression?
+A12: Simple linear regression involves one dependent variable and one independent variable, while multiple linear regression deals with multiple independent variables.
+
+Q13: How do you interpret the R-squared value in regression?
+A13: The R-squared value represents the proportion of the variance in the dependent variable that is explained by the independent variables. Higher R-squared indicates a better fit.
+
+Q14: What is the difference between correlation and regression?
+A14: Correlation measures the strength and direction of the linear relationship between two variables, while regression models the dependent variable's relationship with one or more independent variables.
+
+Q15: What is the difference between the coefficients and the intercept in regression?
+A15: Coefficients represent the slopes of the independent variables in the regression equation, while the intercept is the predicted value when all independent variables are zero.
+
+Q16: How do you handle outliers in regression analysis?
+A16: Outliers can be detected and treated by methods like truncation, transformation, or using robust regression techniques.
+
+Q17: What is the difference between ridge regression and ordinary least squares regression?
+A17: Ridge regression adds a penalty term to the ordinary least squares regression to shrink the coefficient values, preventing overfitting.
+
+Q18: What is heteroscedasticity in regression, and how does it affect the model?
+A18: Heteroscedasticity occurs when the variance of the residuals is not constant across different levels of the independent variables, which can lead to biased coefficient estimates.
+
+Q19: How do you handle multicollinearity in regression analysis?
+A19: Multicollinearity can be addressed by removing highly correlated variables, using dimension reduction techniques, or using regularization methods.
+
+Q20: What is polynomial regression, and when is it used?
+A20: Polynomial regression models the relationship between the dependent variable and independent variables as polynomial functions, used when the relationship is not linear.
+
+Continuing with Loss Function:
+
+Q21: What is a loss function, and what is its purpose in machine learning?
+A21: A loss function measures the difference between predicted and actual values, guiding the model to minimize this difference during training.
+
+Q22: What is the difference between a convex and non-convex loss function?
+A22: A convex loss function has a unique global minimum, while a non-convex loss function may have multiple local minima, making optimization challenging.
+
+Q23: What is mean squared error (MSE), and how is it calculated?
+A23: MSE is a common loss function that calculates the average squared difference between predicted and actual values.
+
+Q24: What is mean absolute error (MAE), and how is it calculated?
+A24: MAE is a loss function that calculates the average absolute difference between predicted and actual values.
+
+Q25: What is log loss (cross-entropy loss), and how is it calculated?
+A25: Log loss measures the dissimilarity between the predicted probabilities and actual binary outcomes, often used in classification problems.
+
+Q26: How do you choose the appropriate loss function for a given problem?
+A26: The choice of loss function depends on the problem type (classification, regression), data distribution, and model objectives.
+
+Q27: Explain the concept of regularization in the context of loss functions.
+A27: Regularization adds penalty terms to the loss function to prevent overfitting and control the model complexity.
+
+Q28: What is Huber loss, and how does it handle outliers?
+A28: Huber loss is a combination of MSE and MAE that is less sensitive to outliers than MSE.
+
+Q29: What is quantile loss, and when is it used?
+A29: Quantile loss measures the differences between quantiles of the predicted and actual distributions, useful for quantile regression problems.
+
+Q30: What is the difference between squared loss and absolute loss?
+A30: Squared loss gives higher penalties to larger errors, while absolute loss treats all errors equally regardless of magnitude.
+
+Continuing with Optimizer (GD):
+
+Q31: What is an optimizer, and what is its purpose in machine learning?
+A31: An optimizer is an algorithm used to adjust the model's parameters during training to minimize the loss function and improve model performance.
+
+Q32: What is Gradient Descent (GD), and how does it work?
+A32: GD is an optimization algorithm that iteratively updates model parameters in the direction of the steepest gradient of the loss function to reach the minimum.
+
+Q33: What are the different variations of Gradient Descent?
+A33: Variations include Batch Gradient Descent, Stochastic Gradient Descent (SGD), Mini-Batch Gradient Descent, and Momentum-based Gradient Descent.
+
+Q34: What is the learning rate in GD, and how do you choose an appropriate value?
+A34: The learning rate controls the step size in each iteration. Choosing an appropriate value requires balancing convergence speed and stability.
+
+Q35: How does GD handle local optima in optimization problems?
+A35: GD can get stuck in local optima, but stochastic variants like SGD and Mini-Batch GD have higher chances of escaping local optima.
+
+Q36: What is Stochastic Gradient Descent (SGD), and how does it differ from GD?
+A36: SGD updates model parameters after each data point, making it faster but more noisy than GD.
+
+Q37: Explain the concept of batch size in GD and its impact on training.
+A37: Batch size determines the number of samples used in each parameter update. Larger batches may lead to more stable convergence but require more memory.
+
+Q38: What is the role of momentum in optimization algorithms?
+A38: Momentum helps accelerate convergence by accumulating past gradients, allowing the optimizer to avoid oscillations and escape local optima.
+
+Q39: What is the difference between batch GD, mini-batch GD, and SGD?
+A39: Batch GD uses the entire dataset for each update, mini-batch GD uses a subset, and SGD updates parameters for each data point.
+
+Q40: How does the learning rate affect the convergence of GD?
+A40: A larger learning rate may cause divergence, while a smaller learning rate may lead to slow convergence. An appropriate learning rate is crucial for successful training.
+
+Continuing with Regularization:
+
+Q41: What is regularization, and why is it used in machine learning?
+A41: Regularization adds penalty terms to the loss function to prevent overfitting and improve the model's generalization to unseen data.
+
+Q42: What is the difference between L1 and L2 regularization?
+A42: L1 regularization adds the absolute value of the coefficients as a penalty, encouraging sparsity. L2 regularization adds the squared value of the coefficients, leading to smaller but non-zero coefficients.
+
+Q43: Explain the concept of ridge regression and its role in regularization.
+A43: Ridge regression uses L2 regularization to shrink the coefficients towards zero, reducing their magnitude.
+
+Q44: What is the elastic net regularization, and how does it combine L1 and L2 penalties?
+A44: Elastic net combines both L1 and L2 penalties, allowing it to handle correlated features and perform feature selection.
+
+Q45: How does regularization help prevent overfitting in machine learning models?
+A45: Regularization penalizes complex models, reducing their sensitivity to noise and preventing overfitting.
+
+Q46: What is early stopping, and how does it relate to regularization?
+A46: Early stopping stops training when the model's performance on a validation set starts to deteriorate, acting as a form of regularization to avoid overfitting.
+
+Q47: Explain the concept of dropout regularization in neural networks.
+A47: Dropout randomly deactivates some neurons during training, preventing the network from relying too much on any specific neuron.
+
+Q48: How do you choose the regularization parameter in a model?
+A48: The regularization parameter (alpha or lambda) is usually chosen through cross-validation or by tuning it on a validation set.
+
+Q49: What is the difference between feature selection and regularization?
+A49: Feature selection chooses relevant features, while regularization controls the importance of all features by adding penalty terms.
+
+Q50: What is the trade-off between bias and variance in regularized models?
+A50: Regularized models tend to have higher bias but lower variance, finding a balance between fitting the data well and generalizing to new data.
+
+Q51: What is Support Vector Machines (SVM), and how does it work?
+A51: SVM is a supervised machine learning algorithm used for classification and regression tasks. It finds a hyperplane that best separates different classes in the data.
+
+Q52: How does the kernel trick work in SVM?
+A52: The kernel trick transforms the data into a higher-dimensional space, allowing SVM to find non-linear decision boundaries.
+
+Q53: What are support vectors in SVM, and why are they important?
+A53: Support vectors are the data points that lie closest to the decision boundary. They play a crucial role in defining the decision boundary and classifier.
+
+Q54: Explain the concept of the margin in SVM and its impact on model performance.
+A54: The margin is the distance between the decision boundary and the support vectors. A larger margin indicates better generalization and robustness to new data.
+
+Q55: How do you handle unbalanced datasets in SVM?
+A55: Techniques like class weighting, using different penalty parameters, or using cost-sensitive learning can address the issue of unbalanced datasets in SVM.
+
+Q56: What is the difference between linear SVM and non-linear SVM?
+A56: Linear SVM finds a linear decision boundary, while non-linear SVM uses the kernel trick to find non-linear decision boundaries.
+
+Q57: What is the role of the C-parameter in SVM, and how does it affect the decision boundary?
+A57: The C-parameter controls the trade-off between maximizing the margin and minimizing the classification error. Smaller C values result in a wider margin but may lead to misclassifications, while larger C values prioritize correct classification but may result in a narrower margin.
+
+Q58: Explain the concept of slack variables in SVM.
+A58: Slack variables allow SVM to handle non-separable data points by allowing some data points to be misclassified within a certain margin.
+
+Q59: What is the difference between hard margin and soft margin in SVM?
+A59: Hard margin SVM aims to find a decision boundary that perfectly separates the classes, while soft margin SVM allows some misclassifications within a margin.
+
+Q60: How do you interpret the coefficients in an SVM model?
+A60: The coefficients in an SVM model represent the weights assigned to each feature in the decision-making process.
+
+Continuing with Decision Trees:
+
+Q61: What is a decision tree, and how does it work?
+A61: A decision tree is a tree-like structure where each internal node represents a decision based on a feature, and each leaf node represents a class or a value.
+
+Q62: How do you make splits in a decision tree?
+A62: The decision tree algorithm selects the feature and threshold that best separates the data into different classes at each node.
+
+Q63: What are impurity measures (e.g., Gini index, entropy), and how are they used in decision trees?
+A63: Impurity measures quantify the homogeneity of classes in a node. They are used to evaluate potential splits and decide the best split for a node.
+
+Q64: Explain the concept of information gain in decision trees.
+A64: Information gain measures the reduction in entropy or Gini impurity achieved by splitting a node, helping in selecting the most informative feature.
+
+Q65: How do you handle missing values in decision trees?
+A65: Missing values can be handled by either assigning them to the most common class or using surrogate splits based on other correlated features.
+
+Q66: What is pruning in decision trees, and why is it important?
+A66: Pruning reduces the size of the decision tree by removing nodes that do not contribute much to its performance. It helps avoid overfitting.
+
+Q67: What is the difference between a classification tree and a regression tree?
+A67: A classification tree predicts class labels, while a regression tree predicts numeric values.
+
+Q68: How do you interpret the decision boundaries in a decision tree?
+A68: Decision boundaries in a decision tree are formed by the sequence of splits from the root node to the leaf nodes, separating the data into different classes.
+
+Q69: What is the role of feature importance in decision trees?
+A69: Feature importance indicates the relative importance of each feature in the decision-making process of the tree.
+
+Q70: What are ensemble techniques, and how are they related to decision trees?
+A70: Ensemble techniques combine multiple decision trees to create more robust and accurate models.
+
+Continuing with Ensemble Techniques:
+
+Q71: What are ensemble techniques in machine learning?
+A71: Ensemble techniques combine the predictions of multiple models to make more accurate and robust predictions.
+
+Q72: What is bagging, and how is it used in ensemble learning?
+A72: Bagging creates multiple bootstrap samples of the training data and trains multiple models on each sample. It then aggregates their predictions through voting or averaging.
+
+Q73: Explain the concept of bootstrapping in bagging.
+A73: Bootstrapping involves randomly sampling data with replacement to create multiple subsets of the training data.
+
+Q74: What is boosting, and how does it work?
+A74: Boosting sequentially builds multiple weak models, giving more importance to misclassified data points in subsequent models.
+
+Q75: What is the difference between AdaBoost and Gradient Boosting?
+A75: AdaBoost adjusts the weights of data points to focus on misclassified examples, while Gradient Boosting fits each new model to the residual errors of the previous model.
+
+Q76: What is the purpose of random forests in ensemble learning?
+A76: Random forests combine multiple decision trees to create a more robust model that reduces overfitting.
+
+Q77: How do random forests handle feature importance?
+A77: Random forests calculate the average decrease in impurity across all decision trees to determine feature importance.
+
+Q78: What is stacking in ensemble learning, and how does it work?
+A78: Stacking combines the predictions of multiple models as input to a meta-model, which makes the final prediction.
+
+Q79: What are the advantages and disadvantages of ensemble techniques?
+A79: Ensemble techniques generally provide improved model performance and are less prone to overfitting but can be computationally expensive and complex.
+
+Q80: How do you choose the optimal number of models in an ensemble?
+A80: The optimal number of models in an ensemble can be determined through cross-validation or validation set performance evaluation.
